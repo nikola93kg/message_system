@@ -1,0 +1,472 @@
+* {
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+/*******************LOGIN STYLE*******************/
+.login_body {
+	margin: 0;
+	padding: 0;
+	background-image: url('../slike/slika.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.login_box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 40px;
+	background: rgba(0, 0, 0, 0.8);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+.login_box h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+}
+
+.login_box .inputBox {
+	position: relative;
+}
+.login_box .inputBox input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 0.5px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.login_box .inputBox label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 0.5px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.login_box .inputBox input:focus ~ label {
+	top: -20px;
+	left: 0;
+	color: #03a9f4;
+	font-size: 12px;
+}
+.login_box .inputBox input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #03a9f4;
+	font-size: 12px;
+}
+.login_box input[type="submit"] {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #03a9f4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 14px;
+	transition: 0.5s all;
+}
+.login_box input[type="submit"]:hover {
+	transform: translateY(2px);
+}
+/*******************REGISTER STYLE*******************/
+.reg {
+	font-size: 12px;
+	position: absolute;
+	bottom: 5px;
+	right: 15px;
+	color: rgba(255, 255, 255, 0.5);
+}
+.reg a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+	transition: 1s all;
+	font-size: 12px;
+}
+.reg a:hover {
+	color: rgba(255, 0, 0, 0.7);
+	font-size: 14px;
+}
+/*******************PASS RESET STYLE*******************/
+.pass_reset {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-size: 14px;
+}
+.pass_reset a {
+	text-decoration: none;
+	color: #fff;
+	transition: 1.5s all;
+}
+.pass_reset a:hover {
+	color: rgba(255, 0, 0, 0.7);
+}
+.povratak {
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	font-size: 14px;
+}
+.povratak a {
+	text-decoration: none;
+	color: #fff;
+	transition: 1.5s all;
+}
+.povratak a:hover {
+	color: rgba(255, 0, 0, 0.7);
+}
+.error {
+	position: absolute;
+	bottom: 5px;
+	left: 575px;
+	font-size: 20px;
+	color: #f00;
+}
+.error_podaci {
+	position: absolute;
+	bottom: 5px;
+	left: 575px;
+	font-size: 20px;
+	color: #f00;
+}
+.error_lozinka {
+	position: absolute;
+	bottom: 20px;
+	left: 575px;
+	font-size: 20px;
+	color: #f00;
+}
+.login_greska {
+	color: red;
+}
+.box input[type="file"] {
+	border: none;
+	border-radius: 15px;
+}
+/*******************HOME STYLE*******************/
+.body_home {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(360deg, #130f40, #dff9fb);
+	background-attachment: fixed;
+}
+.logo {
+	cursor: pointer;
+	width: 150px;
+	height: 50px;
+}
+.navbar-nav {
+	margin-left: auto;
+}
+.navbar-nav .nav-item .nav-link {
+	color: rgba(0, 0, 0, 0.637);
+	transition: 0.7s;
+}
+.navbar-nav .nav-item .nav-link:hover {
+	transform: scale(1.1);
+	color: #0400ff;
+}
+.navbar-nav .nav-item .logout {
+	cursor: pointer;
+	padding: 7px;
+	border-radius: 15px;
+	background: #0984e3;
+	color: #fff;
+	transition: all 0.5s;
+	margin-left: 5px;
+}
+.navbar-nav .nav-item .logout:hover {
+	background: #eb3b5a;
+	transform: scale(0.7);
+	color: #fff;
+}
+.jumbotron {
+	background: transparent;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+@media all and (max-width: 900px) {
+	.jumbotron {
+		background-image: linear-gradient(360deg, #6828df63, #dff9fb);
+		background-attachment: fixed;
+		background-position: center;
+		margin: 0;
+	}
+	.navbar-nav .nav-item .nav-link {
+	color: rgba(0, 0, 0, 0.637);
+	transition: 0.7s;
+}
+	.navbar-nav .nav-item .nav-link:hover {
+		transform: scale(0.9);
+		color: #f51b1b;
+	}
+	.navbar-nav .nav-item .logout {
+		cursor: pointer;
+		margin-top: 5px;
+		width: 105px;
+		border-radius: 15px;
+		background: #0984e3;
+		color: #fff;
+		transition: all 0.5s;
+		margin-left: 5px;
+	}
+
+	.navbar-nav .nav-item .logout:hover {
+		background: #eb3b5a;
+		transform: scale(0.7);
+		color: #fff;
+	}
+}
+.htn {
+	margin-left: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	background: #ff7979;
+	animation: boja 1.3s infinite alternate
+}
+@keyframes boja {
+	0% {transform: scale(1.0);
+		background: #5e54f7f5;}
+	50% {background: #fd3636;}
+	100%{transform: scale(0.9);
+		background: rgb(255, 62, 55);}
+}
+.htn:hover {
+	transition: 0.6s;
+	background: #eb4d4b;
+}
+.nhtn {
+	margin-left: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	background: #5ef047c2;
+}
+.nhtn:hover {
+	transition: 0.6s;
+	background: #28c910;
+}
+.form-footer {
+	box-sizing: border-box;
+}
+.form-footer button {
+	transition: 0.6s;
+	background: #bdc3c7;
+	border: none;
+}
+.form-footer button:hover {
+	transform: translate(10px, 0px);
+	background: #0c63bb;
+	color: #fff;
+}
+.modal-footer {
+	border: none;
+	margin-top: -15px;
+}
+/*******************ERROR STYLE*******************/
+.error_body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background-image: linear-gradient(125deg, #8e44ad, #3498db);
+}
+.container {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #343434;
+}
+.container h1 {
+	font-size: 270px;
+	margin: 0;
+	font-weight: 0;
+	letter-spacing: 15px;
+	background: url(../slike/andjus.jpg) center no-repeat;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+.container a {
+	text-decoration: none;
+	background: #e67e22;
+	color: #fff;
+	padding: 12px 24px;
+	display: inline-block;
+	border-radius: 25px;
+	font-size: 14px;
+	transition: 0.4s;
+}
+.container a:hover {
+	background: #d35400;
+}
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background: #000;
+	padding: 100px;
+}
+section h2 {
+	color: #fff;
+	font-size: 4em;
+}
+section p {
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 300;
+	text-align: justify;
+}
+section img {
+	max-width: 100%;
+	margin: 50px 0 0;
+}
+.light {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.autor_body {
+	background-color: #000;
+}
+.nazad {
+	text-decoration: none;
+	background-color: #000;
+	color: rgba(253, 75, 75, 0.548);
+	margin-left: 5px;
+	transition: 0.4s;
+}
+.nazad:hover {
+	color: #fff;
+}
+/*******************MESSAGES STYLE*******************/
+.poruke_body {
+	background-image: linear-gradient(360deg, #efff63, #dff9fb);
+	background-attachment: fixed;
+	height: 100vh;
+}
+.poruke_naslov {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+.kartica {
+	background: #ffffff91;
+	width: 450px;
+	margin-left: auto;
+}
+h5 > .poruke_slika {
+	width: 50px;
+	height: 40px;
+	border-radius: 50%;
+	margin-left: -5px;
+}
+.brisanje a {
+	color: rgb(255, 255, 255);
+}
+.brisanje a:hover {
+	text-decoration: none;
+}
+.hitno {
+	color: rgba(139, 34, 34, 0.945);
+	padding: 6px;
+	border-radius: 10px;
+}
+.procitano {
+	color: rgb(18, 97, 18);
+	padding: 6px;
+	border-radius: 10px;
+}
+.poz {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.card-header {
+	background: rgba(48, 2, 255, 0.158);
+	border: none;
+}
+.card-footer {
+	border: none;
+}
+.card-footer .btn-warning {
+	margin-left: -5px;
+	padding: 7px;
+}
+.card-footer .btn-info {
+	margin-right: -5px;
+	padding: 6px;
+	width: 50px;
+}
+#naslov_toggle {
+	text-decoration: none;
+}
+.fa-arrow-circle-right {
+	color: rgba(255, 0, 0, 0.658);
+}
+@media all and (max-width: 900px) {
+	.kartica {
+		background: #ff58bf28;
+		width: 160%;
+	}
+	h5 > .poruke_slika {
+		width: 40px;
+		height: 30px;
+		border-radius: 50%;
+		margin-left: -10px;
+	}
+	h5 {
+		font-size: 14px;
+	}
+	h5 .brisanje {
+		font-size: 10px;
+		padding: 3px;
+		margin-right: -10px;
+	}
+	.card-footer {
+		border-top: none;
+	}
+	.card-footer .btn-warning {
+		margin-left: -10px;
+		padding: 3px;
+	}
+	.card-footer .btn-info {
+		margin-right: -10px;
+		padding: 3px;
+	}
+	.poz {
+		display: flex;
+	}
+	.kartica {
+		background: #ffffff94;
+		width: 250px;
+		margin-left: -10px;
+	}
+}
+/*******************FOOTER STYLE*******************/
+.footer {
+	text-align: center;
+	font-size: 12px;
+	background: #09061691;
+	color: #fff;
+}
+.footer a:hover {
+	text-decoration: none;
+}
